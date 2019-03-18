@@ -5,4 +5,4 @@ from flask import current_app, make_response, jsonify
 
 @current_app.errorhandler(404)
 def not_found(error):
-    return make_response(jsonify({'error': 'Not found'}), 404)
+    return make_response(jsonify({'error': 'Data not found'}), 404)

@@ -20,6 +20,5 @@ def _factory(partial_module_string, url_prefix):
 
 
 tasks_manager = _factory('tasks.manager', '/api/v1/tasks')
-tasks_exception = _factory('tasks.exception', '/api/v1/exception')
 
-all_blueprints = (tasks_manager, tasks_exception)
+all_blueprints = (tasks_manager,)
